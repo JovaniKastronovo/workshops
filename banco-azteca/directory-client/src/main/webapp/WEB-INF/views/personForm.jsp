@@ -22,9 +22,6 @@ pageEncoding="ISO-8859-1"%>
                 //Prevent default submission of form
                 e.preventDefault();
 
-                //Remove all errors
-                $('input').next().remove();
-
                 $.post({
                     url : 'savePerson',
                     data : $('form[name=personForm]').serialize(),
